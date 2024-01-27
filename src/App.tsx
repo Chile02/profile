@@ -1,13 +1,14 @@
-import Header from './components/Header'
-import Body from './components/Body'
 
+import GitHubUserSearch from './components/Search'
 function App() {
 
 
   return (
     <>
-    <Header></Header>
-    <Body></Body>
+    {/* <Header></Header> */}
+    <GitHubUserSearch></GitHubUserSearch>
+    
+    {/* <Body></Body> */}
      
     </>
   )
