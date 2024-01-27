@@ -31,7 +31,8 @@ function GitHubUserSearch() {
   };
 
   return (
-    <div>
+    <div className='page-container'>
+      <div>
       <input
         type="text"
         value={query}
@@ -40,11 +41,13 @@ function GitHubUserSearch() {
       />
 
       <button onClick={handleSearch}>Search</button>
-      
-      {user && (
+      </div>
+     
+     <div className='user-Container'>
+     {user && (
         <div>
           <h1>{user.name}</h1>
-          <p>{user.login}</p>
+          <p><a href={user.html_url}>{user.login}</a></p>
           <p>Joined: {user.created_at}</p>
           <img src={user.avatar_url} alt={user.login} />
           <p>Public repos: {user.public_repos}</p>
@@ -55,6 +58,10 @@ function GitHubUserSearch() {
         </div>
       )}
 
+     </div>
+      
+
+      <div className='res-container'>
       {repos.length > 0 && (
         <div>
           <h2>Repositories:</h2>
@@ -67,12 +74,17 @@ function GitHubUserSearch() {
                 <p>{repo.description}</p>
                 <p>Folks: {repo.forks_count}</p>
                 <p>Star: {repo.stargazers_count}</p>
+                <p>Language: {repo.language}</p>
+                <p>Size: {repo.size}kb</p>
               </li>
             ))}
           </ul>
         </div>
       )}
-    </div>
+
+      </div>
+      
+          </div>
   );
 }
 
