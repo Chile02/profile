@@ -1,0 +1,124 @@
+body{
+	background-color: rgb(10, 10, 24);
+	font-family: Arial, Helvetica, sans-serif;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+}
+header input{
+	height: 28px;
+	width: 260px;
+	border: 1px solid rgb(10, 10, 24);
+	border-radius: 5px;
+	padding-left: 5px;
+	
+}
+
+header button{
+	height: 30px;
+	font-weight: 100px;
+	border: 1px solid rgb(10, 10, 24);
+	background-color: blue;
+	color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.page-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.user-section{
+	margin-top: 20px;
+	text-align: center;
+	background-color: rgb(49, 48, 90);
+	border: solid rgb(167, 99, 99);
+	border-radius: 10px;
+}
+
+.page-content img{
+	margin-top: 10px;
+	width: 200px;
+	border: solid wheat;
+	object-fit: contain;
+	border-radius: 50%;
+}
+.user-section h1{
+	color: #f1f1f1;
+	height: 15px;
+	width: 500px;
+	font-size: xx-large;
+	font-weight: bold;
+}
+.user-section  a{
+	color: rgb(37, 230, 117);
+	font-family: 'Chakra Petch';
+}
+
+.section-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+.user-section p{
+	color: rgb(136, 133, 129);
+}
+
+.stats{
+	margin-right: 5px;
+	height: fit-content;
+	background-color: rgb(18, 18, 61);
+	text-align: center;
+	border: 1px solid rgb(167, 99, 99);
+	border-radius: 5px;
+	margin-bottom: 8px;
+}
+.stats p{
+	color: rgb(255, 255, 255);
+	margin-bottom: 3px;
+	padding: 4px;
+}
+.stats span{
+	font-size: 10px;
+	color: blueviolet;
+	font-weight: lighter;
+}
+
+
+.repo-section{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(49, 48, 90);
+	border: solid rgb(167, 99, 99);
+	border-radius: 10px;
+	max-width: 500px;
+	width: 100%;
+}
+.repo-section h2{
+	color: #f1f1f1;
+}
+.repo-box{
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgb(167, 99, 99);
+	background-color: rgb(18,18,61);
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 400px;
+	margin-right: 10%;
+}
+.repo-box h4{
+	color: #a79191;
+}
