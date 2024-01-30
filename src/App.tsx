@@ -5,10 +5,11 @@ function App() {
 
   return (
     <>
-    {/* <Header></Header> */}
+
+
     <GitHubUserSearch></GitHubUserSearch>
     
-    {/* <Body></Body> */}
+
      
     </>
   )
