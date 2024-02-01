@@ -80,8 +80,6 @@ function GitHubUserSearch() {
 						)}
 					</section>
 
-  
-
 
 					<section className='repo-section'>
 						{repos.length > 0 && (
